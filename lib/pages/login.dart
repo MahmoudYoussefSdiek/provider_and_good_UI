@@ -22,7 +22,7 @@ class Login extends StatelessWidget {
                   height: 60,
                 ),
                 const MyTextField(
-                  hinttext: 'Enter Your Email',
+                  hintText: 'Enter Your Email',
                   isPassword: false,
                   textInputType: TextInputType.emailAddress,
                 ),
@@ -30,7 +30,7 @@ class Login extends StatelessWidget {
                   height: 30,
                 ),
                 const MyTextField(
-                  hinttext: 'Enter your Password',
+                  hintText: 'Enter your Password',
                   textInputType: TextInputType.text,
                   isPassword: true,
                 ),

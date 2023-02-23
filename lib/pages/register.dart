@@ -22,7 +22,7 @@ class Register extends StatelessWidget {
                     height: 60,
                   ),
                   const MyTextField(
-                    hinttext: 'Enter Your username',
+                    hintText: 'Enter Your username',
                     isPassword: false,
                     textInputType: TextInputType.text,
                   ),
@@ -30,7 +30,7 @@ class Register extends StatelessWidget {
                     height: 30,
                   ),
                   const MyTextField(
-                    hinttext: 'Enter Your Email',
+                    hintText: 'Enter Your Email',
                     isPassword: false,
                     textInputType: TextInputType.emailAddress,
                   ),
@@ -38,7 +38,7 @@ class Register extends StatelessWidget {
                     height: 30,
                   ),
                   const MyTextField(
-                    hinttext: 'Enter your Password',
+                    hintText: 'Enter your Password',
                     textInputType: TextInputType.text,
                     isPassword: true,
                   ),
@@ -70,7 +70,7 @@ class Register extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
-                        'Do not have an account ? ',
+                        'Already have an account ? ',
                         style: TextStyle(
                           fontSize: 18,
                         ),

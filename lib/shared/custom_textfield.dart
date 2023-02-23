@@ -5,12 +5,12 @@ class MyTextField extends StatelessWidget {
     Key? key,
     required this.textInputType,
     required this.isPassword,
-    required this.hinttext,
+    required this.hintText,
   }) : super(key: key);
 
   final TextInputType textInputType;
   final bool isPassword;
-  final String hinttext;
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MyTextField extends StatelessWidget {
       keyboardType: textInputType,
       obscureText: isPassword,
       decoration: InputDecoration(
-        hintText: hinttext,
+        hintText: hintText,
         enabledBorder: OutlineInputBorder(
           borderSide: Divider.createBorderSide(context),
         ),
