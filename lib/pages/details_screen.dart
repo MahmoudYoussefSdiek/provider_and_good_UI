@@ -45,75 +45,78 @@ class _DetailsState extends State<Details> {
               padding: const EdgeInsets.all(10.0),
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 255, 129, 129),
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                            padding: const EdgeInsets.all(4),
-                            child: const Text(
-                              'New',
-                              style: TextStyle(
-                                fontSize: 20,
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(255, 255, 129, 129),
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              padding: const EdgeInsets.all(4),
+                              child: const Text(
+                                'New',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
                               ),
                             ),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Row(
-                            children: const [
-                              Icon(
-                                Icons.star,
-                                color: Color.fromARGB(255, 255, 191, 0),
-                                size: 35,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Color.fromARGB(255, 255, 191, 0),
-                                size: 35,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Color.fromARGB(255, 255, 191, 0),
-                                size: 35,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Color.fromARGB(255, 255, 191, 0),
-                                size: 35,
-                              ),
-                              Icon(
-                                Icons.star,
-                                color: Color.fromARGB(255, 255, 191, 0),
-                                size: 35,
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          const Icon(
-                            Icons.edit_location,
-                            size: 35,
-                            color: Color.fromARGB(168, 3, 65, 27),
-                          ),
-                          const SizedBox(
-                            width: 3,
-                          ),
-                          Text(
-                            widget.product.location,
-                            style: const TextStyle(fontSize: 15),
-                          ),
-                        ],
-                      ),
-                    ],
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Row(
+                              children: const [
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromARGB(255, 255, 191, 0),
+                                  size: 35,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromARGB(255, 255, 191, 0),
+                                  size: 35,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromARGB(255, 255, 191, 0),
+                                  size: 35,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromARGB(255, 255, 191, 0),
+                                  size: 35,
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromARGB(255, 255, 191, 0),
+                                  size: 35,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            const Icon(
+                              Icons.edit_location,
+                              size: 35,
+                              color: Color.fromARGB(168, 3, 65, 27),
+                            ),
+                            const SizedBox(
+                              width: 3,
+                            ),
+                            Text(
+                              widget.product.location,
+                              style: const TextStyle(fontSize: 15),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(
                     height: 16,

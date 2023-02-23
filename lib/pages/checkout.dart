@@ -23,7 +23,7 @@ class CheckOut extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: SizedBox(
-              height: 500,
+              height: MediaQuery.of(context).size.height - 150,
               child: ListView.builder(
                   //padding: EdgeInsets.all(8),
                   itemCount: itemList.selectedItems.length,
@@ -48,22 +48,25 @@ class CheckOut extends StatelessWidget {
                   }),
             ),
           ),
-          ElevatedButton(
-            onPressed: () {},
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(btnPink),
-              padding: MaterialStateProperty.all(
-                const EdgeInsets.all(12),
-              ),
-              shape: MaterialStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(btnPink),
+                padding: MaterialStateProperty.all(
+                  const EdgeInsets.all(12),
+                ),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                 ),
               ),
-            ),
-            child: Text(
-              'Pay \$${itemList.itemsPrices.round()}',
-              style: const TextStyle(fontSize: 20),
+              child: Text(
+                'Pay \$${itemList.itemsPrices.round()}',
+                style: const TextStyle(fontSize: 20),
+              ),
             ),
           ),
         ],
